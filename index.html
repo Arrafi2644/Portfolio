@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Hero Icon -->
+  <link href='https://cdn.jsdelivr.net/npm/heroicons@2.1.5/+esm'>
+
+
+  <!-- Daisy UI + Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow: {
+            // 'custom-light': '-4px -4px 4px 10px rgba(0, 0, 0, 0.1)',
+            'all-sides': '0px 4px 8px rgba(0, 0, 0, 0.25)',
+          },
+          colors: {
+            clifford: '#da373d',
+            'bg-color': '#E5E5E5',
+            'bg-color2': '#FFFFFF',
+            'color-first': '#2B2B2B',
+            'color-second': '#FFB400',
+            'color-third': '#767676'
+          },
+          fontFamily: {
+            'inter-font': 'Inter'
+          },
+
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* h1{
+            font-family: "Inter", sans-serif;
+        } */
+  </style>
+</head>
+
+<body class="font-inter-font bg-bg-color ">
+  <!-- header section  -->
+  <header class="max-w-6xl px-5 mx-auto">
+    <!-- banner-section  -->
+    <section class="bg-bg-color2 rounded-md flex flex-col lg:flex-row gap-6 items-center justify-between px-8 md:px-10 lg:px-12 pb-5 lg:pb-0">
+
+      <!-- content-part  -->
+      <div class="w-full lg:w-3/5 space-y-5 order-2 lg:order-none text-center lg:text-left">
+        <h1 class="text-5xl font-bold leading-tight text-color-first">I’m Rayan Adlrdard <br>
+          <span class="text-color-second">Front-end</span> Developer
+        </h1>
+        <p class="w-4/5 text-base text-color-third">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+          volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+        <button class="bg-color-second text-first rounded-md font-medium px-8 py-4 uppercase flex gap-3 mx-auto lg:ml-0 my-5">Hire Me
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+
+          </span></button>
+      </div>
+      <!-- img-part  -->
+      <div class="">
+        <img src="images/person.png" alt="">
+      </div>
+    </section>
+  </header>
+  <main class="max-w-6xl px-5 mx-auto">
+
+    <!-- skill section -->
+    <section class="pt-16">
+      <h2 class="text-center text-color-first font-bold text-3xl mb-6">My Skills</h2>
+      <p class="text-center text-color-third mb-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum
+      </p>
+
+      <!-- section body  -->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="text-center bg-bg-color2 p-6 rounded-md">
+          <div class="radial-progress text-color-second" style="--value:70;" role="progressbar">90%</div>
+          <h3 class="text-xl font-semibold mt-4">HTML</h3>
+        </div>
+        <div class="text-center bg-bg-color2 p-6 rounded-md">
+          <div class="radial-progress text-color-second" style="--value:70;" role="progressbar">93%</div>
+          <h3 class="text-xl font-semibold mt-4">CSS</h3>
+        </div>
+        <div class="text-center bg-bg-color2 p-6 rounded-md">
+          <div class="radial-progress text-color-second" style="--value:70;" role="progressbar">85%</div>
+          <h3 class="text-xl font-semibold mt-4">Tailwind</h3>
+        </div>
+        <div class="text-center bg-bg-color2 p-6 rounded-md">
+          <div class="radial-progress text-color-second" style="--value:70;" role="progressbar">83%</div>
+          <h3 class="text-xl font-semibold mt-4">Javascript</h3>
+        </div>
+        <div class="text-center bg-bg-color2 p-6 rounded-md">
+          <div class="radial-progress text-color-second" style="--value:70;" role="progressbar">92</div>
+          <h3 class="text-xl font-semibold mt-4">Js React</h3>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- services section -->
+    <section class="pt-16">
+      <h2 class="text-center text-color-first font-bold text-3xl mb-6">My Services</h2>
+      <p class="text-center text-color-third mb-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum
+      </p>
+
+      <!-- service-section-body  -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-bg-color2 rounded-md p-6 flex justify-center items-center flex-col">
+          <img src="images/coding.png" alt="">
+          <h4 class="font-medium text-lg text-color-first leading-tight mt-6 mb-4">Web Development</h4>
+          <p class="text-color-third font-medium capitalize"> blog, e-commerce</p>
+        </div>
+        <div class="bg-bg-color2 rounded-md p-6 flex justify-center items-center flex-col">
+          <img src="images/illustration.png" alt="">
+          <h4 class="font-medium text-lg text-color-first leading-tight mt-6 mb-4">UI/UX design</h4>
+          <p class="text-color-third font-medium capitalize"> Mobile app, website design</p>
+        </div>
+        <div class="bg-bg-color2 rounded-md p-6 flex justify-center items-center flex-col">
+          <img src="images/Microphone.png" alt="">
+          <h4 class="font-medium text-lg text-color-first leading-tight mt-6 mb-4">Sound Design</h4>
+          <p class="text-color-third font-medium capitalize"> Voice Over, Beat Making</p>
+        </div>
+        <div class="bg-bg-color2 rounded-md p-6 flex justify-center items-center flex-col">
+          <img src="images/game-development.png" alt="">
+          <h4 class="font-medium text-lg text-color-first leading-tight mt-6 mb-4">Game Design</h4>
+          <p class="text-color-third font-medium capitalize"> Character Design, Props & Objects</p>
+        </div>
+        <div class="bg-bg-color2 rounded-md p-6 flex justify-center items-center flex-col">
+          <img src="images/Photographer.png" alt="">
+          <h4 class="font-medium text-lg text-color-first leading-tight mt-6 mb-4">Photography</h4>
+          <p class="text-color-third font-medium capitalize"> portrait, product photography</p>
+        </div>
+        <div class="bg-bg-color2 rounded-md p-6 flex justify-center items-center flex-col">
+          <img src="images/illustration.png" alt="">
+          <h4 class="font-medium text-lg text-color-first leading-tight mt-6 mb-4">UI/UX design</h4>
+          <p class="text-color-third font-medium capitalize"> Mobile app, website design</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- price-section  -->
+    <section class="pt-16">
+      <h2 class="text-center text-color-first font-bold text-3xl mb-6">Price Plan</h2>
+      <p class="text-center text-color-third mb-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum
+      </p>
+
+      <!-- section body  -->
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-md pt-10 bg-bg-color2 text-center">
+          <h3 class="text-center text-2xl font-bold">Silver</h3>
+          <h2 class="text-center text-3xl mt-5 mb-2 text-color-first font-bold">$0.00<span
+              class="text-base font-medium">/hour</span></h2>
+          <p class="text-center">For most businesses that want to
+            optimize web queries</p>
+
+          <div class="flex flex-col gap-4 my-5">
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+
+              </span>
+              <p>UI Design</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+
+              </span>
+              <p>web development</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <p>logo design</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <p>seo optimization</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <p>wordPress integration</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <p>5 Websites</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <p>unlimited user</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </span>
+              <p>20 gB bandwith</p>
+            </div>
+          </div>
+          <button class=" border order-1 px-6 py-2 rounded-full shadow-all-sides font-bold">Order Now</button>
+        </div>
+
+        <div class="bg-bg-color2 rounded-md">
+          <div class="bg-color-second rounded-t-md text-center p-2 font-semibold">Most Popular</div>
+          <div class="p-6  text-center">
+
+            <h3 class="text-center text-2xl font-bold">Gold</h3>
+            <h2 class="text-center text-3xl mt-5 mb-2 text-color-first font-bold">$50.00<span
+                class="text-base font-medium">/hour</span></h2>
+            <p class="text-center">For most businesses that want to
+              optimize web queries</p>
+
+            <div class="flex flex-col gap-4 my-5">
+              <div class="flex gap-3 items-center">
+                <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+
+                </span>
+                <p>UI Design</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+
+                </span>
+                <p>web development</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </span>
+                <p>logo design</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </span>
+                <p>seo optimization</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </span>
+                <p>wordPress integration</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </span>
+                <p>5 Websites</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </span>
+                <p>unlimited user</p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </span>
+                <p>20 gB bandwith</p>
+              </div>
+            </div>
+            <button class=" border order-1 px-6 py-2 rounded-full shadow-all-sides bg-color-second font-bold">Order
+              Now</button>
+
+          </div>
+        </div>
+
+        <div class="p-6 rounded-md pt-10 bg-bg-color2 text-center">
+          <h3 class="text-center text-2xl font-bold">Diamond</h3>
+          <h2 class="text-center text-3xl mt-5 mb-2 text-color-first font-bold">$80.00<span
+              class="text-base font-medium">/hour</span></h2>
+          <p class="text-center">For most businesses that want to
+            optimize web queries</p>
+
+          <div class="flex flex-col gap-4 my-5">
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+
+              </span>
+              <p>UI Design</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+
+              </span>
+              <p>web development</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p>logo design</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p>seo optimization</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p>wordPress integration</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p>5 Websites</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p>unlimited user</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <span class="text-color-second"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                </svg>
+              </span>
+              <p>20 gB bandwith</p>
+            </div>
+          </div>
+          <button class=" border order-1 px-6 py-2 rounded-full shadow-all-sides font-bold">Order Now</button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation section  -->
+    <section class="pt-16">
+      <h2 class="text-center text-color-first font-bold text-3xl mb-6">Recommendations</h2>
+      <p class="text-center text-color-third mb-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum
+      </p>
+
+      <!-- section body  -->
+
+      <div class="carousel w-full">
+        <div id="item1" class="carousel-item w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-bg-color2 rounded-md p-6 hidden lg:block space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile.png" alt="">
+              <div>
+                <h4 class="font-semibold">James Gouse</h4>
+                <p>Graphics Designer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-bg-color2 rounded-md p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile-2.png" alt="">
+              <div>
+                <h4 class="font-semibold">Tiana Philips</h4>
+                <p>Photographer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-bg-color2 rounded-md p-6 hidden md:block space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile -3.png" alt="">
+              <div>
+                <h4 class="font-semibold">Talan Westervelt</h4>
+                <p>Businesses Man</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="item2" class="carousel-item w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-bg-color2 rounded-md p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile.png" alt="">
+              <div>
+                <h4 class="font-semibold">James Gouse</h4>
+                <p>Graphics Designer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-bg-color2 hidden md:block rounded-md p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile-2.png" alt="">
+              <div>
+                <h4 class="font-semibold">Tiana Philips</h4>
+                <p>Photographer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-bg-color2 hidden lg:block  rounded-md p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile -3.png" alt="">
+              <div>
+                <h4 class="font-semibold">Talan Westervelt</h4>
+                <p>Businesses Man</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="item3" class="carousel-item w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-bg-color2 rounded-md hidden lg:block p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile.png" alt="">
+              <div>
+                <h4 class="font-semibold">James Gouse</h4>
+                <p>Graphics Designer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-bg-color2 rounded-md hidden md:block p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile-2.png" alt="">
+              <div>
+                <h4 class="font-semibold">Tiana Philips</h4>
+                <p>Photographer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-bg-color2 rounded-md p-6 space-y-6">
+            <div class="text-color-second flex gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                  d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                  clip-rule="evenodd" />
+              </svg>
+
+
+            </div>
+            <h4 class="text-xl font-semibold">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra
+              morbi. Morbi donec amet....</p>
+            <div class="flex gap-6 items-center">
+              <img src="images/Profile -3.png" alt="">
+              <div>
+                <h4 class="font-semibold">Talan Westervelt</h4>
+                <p>Businesses Man</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+      </div>
+    </section>
+
+    <!-- Portfolio section  -->
+
+    <section class="pt-16">
+      <h2 class="text-center text-color-first font-bold text-3xl mb-6">Portfolio</h2>
+      <p class="text-center text-color-third mb-10">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        <br> do amet sint. Velit officia consequat duis enim velit mollit. <br> lorem ipsum
+      </p>
+
+      <!-- section body  -->
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-bg-color2 p-6 rounded-md">
+        <div class="border border-white rounded-md"><img class="rounded-md " src="images/port-6.png" alt=""></div>
+        <div class="border border-white rounded-md"><img class="rounded-md " src="images/port-1 (1).png" alt=""></div>
+        <div class="border border-white rounded-md"><img class="rounded-md " src="images/port-2.png" alt=""></div>
+        <div class="border border-white rounded-md"><img class="rounded-md " src="images/port-3.png" alt=""></div>
+        <div class="border border-white rounded-md"><img class="rounded-md " src="images/port-4.png" alt=""></div>
+        <div class="border border-white rounded-md"><img class="rounded-md " src="images/port-5.png" alt=""></div>
+       </div>
+
+    </section>
+
+    <!-- Contact-section  -->
+    <section class="pt-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="col-span-1 lg:col-span-2">
+          <h2 class="text-3xl font-bold">Leave us your info</h2>
+
+          <div class="mt-8 bg-bg-color2 p-6 space-y-4 rounded-md">
+            <div>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-base">Your Full Name ( Required)</span>
+                </div>
+                <input type="text" class="input input-bordered w-full" />
+
+              </label>
+            </div>
+            <div>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-base">Your Email ( Required)</span>
+                </div>
+                <input type="email" class="input input-bordered w-full" />
+
+              </label>
+            </div>
+            <div>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-base">Subject</span>
+                </div>
+                <input type="text" class="input input-bordered w-full" />
+
+              </label>
+
+            </div>
+
+            <div>
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text text-base">Message</span>
+                </div>
+                <textarea rows="7" class="textarea textarea-bordered resize-none"></textarea>
+
+              </label>
+            </div>
+
+            <button class="bg-color-second text-first rounded-md font-medium px-8 py-4 uppercase flex gap-3">Send
+              Message</button>
+          </div>
+        </div>
+
+        <!-- contact information  -->
+        <div>
+          <h2 class="text-3xl font-bold">Contact Information</h2>
+
+          <div>
+            <div class="mt-8 bg-bg-color2 p-6 space-y-4 rounded-md">
+                  <div class="w-8 h-8 bg-color-second rounded-full flex items-center justify-center mx-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                </div>
+                  <div class="flex justify-between">
+                    <h5>Country:</h5>
+                    <p>Bangladesh</p>
+                  </div>
+                    <div class="flex justify-between">
+                    <h5>City:</h5>
+                    <p>Dhaka</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <h5>Street:</h5>
+                    <p>1201, Mirpur</p>
+                  </div>
+                  
+            </div>
+            <div class="mt-8 bg-bg-color2 p-6 space-y-4 rounded-md">
+              <div class="w-8 h-8 bg-color-second rounded-full flex items-center justify-center mx-auto"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              
+              
+            </div>
+              <div class="flex justify-between">
+                <h5>Email:</h5>
+                <p>Youremail@gmail.com</p>
+              </div>
+                <div class="flex justify-between">
+                <h5>Skype:</h5>
+                <p>@Yourusername</p>
+              </div>
+              <div class="flex justify-between">
+                <h5>Telegram:</h5>
+                <p>@Yourusername</p>
+              </div>
+              
+        </div>
+        <div class="mt-8 bg-bg-color2 p-6 space-y-4 rounded-md">
+          <div class="w-8 h-8 bg-color-second rounded-full flex items-center justify-center mx-auto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path d="M10.5 18.75a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" />
+            <path fill-rule="evenodd" d="M8.625.75A3.375 3.375 0 0 0 5.25 4.125v15.75a3.375 3.375 0 0 0 3.375 3.375h6.75a3.375 3.375 0 0 0 3.375-3.375V4.125A3.375 3.375 0 0 0 15.375.75h-6.75ZM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 0 1 7.5 19.875V4.125Z" clip-rule="evenodd" />
+          </svg>
+          
+        </div>
+          <div class="flex justify-between">
+            <h5>Support services:</h5>
+            <p>15369</p>
+          </div>
+            <div class="flex justify-between">
+            <h5>Office:</h5>
+            <p>+58 (021)356 587 235</p>
+          </div>
+          <div class="flex justify-between">
+            <h5>Personal:</h5>
+            <p>+58 (021)356 587 235</p>
+          </div>
+          
+    </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section  -->
+  <footer class="max-w-6xl mx-auto px-5 mt-16">
+    <footer class="footer bg-neutral text-neutral-content items-center p-4 rounded-md">
+      <aside class="grid-flow-col items-center">
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </nav>
+    </footer>
+  </footer>
+</body>
+
+</html>
